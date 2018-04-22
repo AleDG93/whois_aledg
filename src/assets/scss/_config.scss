@@ -2,14 +2,15 @@
 $black: #010000;
 $white: #ffffff;
 $darkGrey: #333;
+$lightGrey: rgba(100, 100, 100, 0.49);
 $red: #ff1755;
+$cyan: #189090;
 
 
 
 /*
 Mixins
 */
-
 
 @mixin translateY($e){
 
@@ -25,6 +26,20 @@ Mixins
   transition: $e;
 }
 
+@mixin transitionOut($e){
+  -webkit-transition: all $e ease-out;
+  -moz-transition: all $e ease-out;
+  -o-transition: all $e ease-out;
+  -ms-transition: all $e ease-out;
+  transition: all $e ease-out;
+}
+
+@mixin box-shadow($dimension, $color){
+
+  -webkit-box-shadow: $dimension $color;
+  -moz-box-shadow: $dimension $color;
+  box-shadow: $dimension $color;
+}
 
 body {
 
@@ -33,7 +48,6 @@ body {
   color: $black;
   font-weight: 400px;
   font-style: normal;
-
 }
 
 a {

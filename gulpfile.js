@@ -12,7 +12,7 @@ var SCSS_DEST = './src/assets/css';
 gulp.task('compile_scss', function(){
 
     gulp.src(SCSS_SRC)
-    .pipe(sass().on('erroor', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(minifyCSS())
     .pipe(rename({suffix: '.min'}))
     .pipe(changed(SCSS_DEST))
