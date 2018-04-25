@@ -6,9 +6,9 @@ class Homepage extends Component {
     return (
       <div className="container row">
           <div className="f-c-third center-h">
-            <img className="profile_image mx-auto" src={require("../../assets/images/dalgob_serio.jpg")} />
+            <img className="profile_image mx-auto div-box-shadow" src={require("../../assets/images/dalgob_serio.jpg")} />
           </div>
-          <div className="st-c-third">
+          <div className="st-c-third container-fixed">
             <h2>Welcome to my personal website</h2>
             <p className="justify-text">
             Lorem Ipsum è 
@@ -18,6 +18,10 @@ class Homepage extends Component {
             ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, 
             </p>  
         </div> 
+        <div className="three-r">
+          Abluando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, 
+            m
+        </div>
       </div>
     );
   }
