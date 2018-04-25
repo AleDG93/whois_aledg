@@ -79,6 +79,8 @@ header {
   text-justify: inter-word;
 }
 
+
+
 /*
 Define Grid structure of the container
 */
@@ -88,6 +90,23 @@ Define Grid structure of the container
   grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-gap: 10px;
   grid-auto-rows: minmax(30px, auto);
+  padding: 10px;
+}
+
+.container-small {
+  @extend .container;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+
+}
+.container-table {
+
+  @extend .container;
+
+}
+
+.container-fixed {
+
+  grid-gap: 10px;
   padding: 10px;
 }
 
@@ -226,14 +245,25 @@ Define Grid structure of the container
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     grid-auto-rows: minmax(20px, auto);
     grid-gap: 5px;
-    background-color: $red;
     padding: 5px;
+
+  }
+
+  .container-table {
+    display: inline;
+    grid-auto-rows: minmax(20px, auto);
+    grid-gap: 5px;
+    padding: 5px;    
+    grid-template-columns: repeat(3, minmax(200, 1fr));
+  }
+
+  .container-small {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
 
   }
   .container-fixed {
     grid-auto-rows: minmax(20px, auto);
     grid-gap: 5px;
-    background-color: $red;
     padding: 5px;    
     grid-template-columns: repeat(3, minmax(280px, 1fr));
   }
@@ -309,8 +339,8 @@ Define Grid structure of the container
 
 
 
- //Colors for containers
-// /*
+//Colors for containers
+/*
  .container {
   border: solid 1px $red;
   
@@ -342,9 +372,9 @@ Define Grid structure of the container
   border: solid 1px green;
 }
 
-/*
-Define rows classes inside container
-*/
+
+// Define rows classes inside container
+
 
 .one-r {
   border: solid 1px purple;

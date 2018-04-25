@@ -57,7 +57,17 @@ header {
 
 .profile_image {
 
-    border-radius: 45%;
+    border-radius: 60%;
     max-width: 250px;
     max-height: 250px;
+}
+
+.div-box-shadow {
+    @include box-shadow(0 0 10px, $darkGrey);
+}
+@media only screen and (max-width : 1024px) {
+
+    .div-box-shadow {
+        @include box-shadow(0 0 5px, $darkGrey);
+    }
 }
