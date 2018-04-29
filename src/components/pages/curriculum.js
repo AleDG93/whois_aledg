@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import cv_pdf from '../../assets/images/CV_Alessandro_Dal_Gobbo.pdf';
 
 class Curriculum extends Component {
+
   render() {
     return (
-      <div className="container-fixed">
+      <div className="container-fixed p-all-l">
         <div className="container-fixed div-box-shadow m-b-l">
         <div className="container one-r full-c-third">
           <div className="one-r container">
@@ -214,7 +215,8 @@ class Curriculum extends Component {
           If you liked my hystory you can download here my complete Curriculum Vitae in PDF
         </div>
         <div className="one-r">
-        <a href={cv_pdf}>CV_Alessandro_Dal_Gobbo.pdf</a>
+          <i className="icon-file-pdf"></i>
+          <a href={cv_pdf}> CV_Alessandro_Dal_Gobbo.pdf</a>
         </div>
       </div>
     </div>

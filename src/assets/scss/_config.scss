@@ -4,9 +4,7 @@ $white: #ffffff;
 $darkGrey: #333;
 $lightGrey: rgba(100, 100, 100, 0.49);
 $red: #ff1755;
-$cyan: #189090;
-
-
+$perry: #189090;
 
 
 /*
@@ -274,6 +272,18 @@ Define Grid structure of the container
 
 .m-l {
   margin: 20px;
+}
+
+.p-all-s {
+  padding: 5px;
+}
+
+.p-all-m {
+  padding: 12px;
+}
+
+.p-all-l {
+  padding: 20px;
 }
 
 

@@ -1,4 +1,5 @@
 @import "_config.scss";
+@import "../fontello-bf2ef884/css/fontello.css";
 
 footer {
   
@@ -6,10 +7,37 @@ footer {
     margin-top: 50px;
     bottom: 0px;
     width:100%;
-    min-height:60px;   /* Height of the footer */
-    background:#6cf;
+    background: whitesmoke;
+    color: $darkGrey;
+    @include box-shadow(0 0 8px, $darkGrey);
 
+    #copyright {
+        color: $black;
+        font-size: 14px;
+    }
+    a {
+        color: $black;
+        font-size: 14px;
     
+        &:hover{
+            font-size: 20px;
+            box-shadow: 0 0 12px $darkGrey;
+            border-radius: 25px;
+            padding: 10px;
+            transition: box-shadow 0.3s ease-in-out, font-size 0.5s;
+        }
+    }
+}
+
+#copyright {
+    width: 100%;
+    margin: auto;
+    bottom: 20px;
+    }
+
+.logo_image {
+    
+    max-width: 30%;   
 }
 
 header {
@@ -17,7 +45,7 @@ header {
     position: relative;
     display: block;
     width: 100%;
-    background: $cyan;
+    background: $perry;
     color: $white;
     height: 70px;
     @include box-shadow(0px 3px 5px, $lightGrey);
@@ -56,7 +84,7 @@ header {
 
                 &:hover{
                     color: $white;
-                    font-size: 25px;
+                    font-size: 22px;
                     box-shadow: 0 0 12px rgb(0, 231, 193);
                     border-radius: 25px;
                     padding: 10px;
@@ -82,7 +110,19 @@ header {
     .div-box-shadow {
         @include box-shadow(0 0 5px, $darkGrey);
     }
+
 }
+
+@media only screen and (max-width : 630px) {
+
+    .logo {
+        img {
+            display: none;
+        }
+    }
+    
+}
+
 .div-box-shadow {
     transition: .5s ease;
     }
