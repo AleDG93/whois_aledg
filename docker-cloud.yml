@@ -1,5 +1,7 @@
 adalgobbo:
-  image: alessandrodg/whois_aledg
+  autoredeploy: true
+  image: 'alessandrodg/whois_aledg'
   ports:
-    - "80:3000"
-    - "8080:3000"
+    - '80:3000'
+    - '8080:3000'
+    - '8081:3000'
