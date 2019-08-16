@@ -1,20 +1,20 @@
 
 
-###Create the application structure
+### Create the application structure
 `create-react-app my_app`
 
 
-###Navigate the folder
+### Navigate the folder
 `cd my_app`
 
-###Remove useless files
+### Remove useless files
 ```
 rm src/index.css
 rm src/logo.svg
 rm src/App.css
 rm public/manifest.json
 ```
-###Subsitute App.js with:
+### Subsitute App.js with:
 ```
 import React, { Component } from 'react';
 
@@ -31,12 +31,12 @@ class App extends Component {
 export default App;
 ```
 
-###Create gulpfile and install dependencies
+### Create gulpfile and install dependencies
 ```
 touch gulpfile.js
 npm install --save gulp gulp-sass gulp-clean-css gulp-uglify gulp-rename gulp-changed
 ```
-###Create sass structures
+### Create sass structures
 ```
 mkdir src/assets/scss
 mkdir src/assets/css
@@ -77,9 +77,9 @@ gulp.task('watch_scss', function(){
 //Run tasks
 gulp.task('default', ['watch_scss']);
 ```
-###Import css into app.js
+### Import css into app.js
 `import './assets/css/default.min.css'`
-###Create a components folder and subfolderrs
+### Create a components folder and subfolderrs
 ```
 mkdir src/components
 mkdir src/components/header_components
@@ -90,7 +90,7 @@ mkdir src/components/pages
 touch src/components/pages/homepage.js
 ```
 
-###Add the header code
+### Add the header code
 ```
 import React, { Component } from 'react';
 
@@ -106,7 +106,7 @@ class Header extends Component {
 
 export default Header;
 ```
-###Add the footer 
+### Add the footer 
 ```
 import React, { Component } from 'react';
 
@@ -122,7 +122,7 @@ class Footer extends Component {
 
 export default Footer;
 ```
-###Create a partial file _config.scss in scss folder and insert global scss variables
+### Create a partial file _config.scss in scss folder and insert global scss variables
 `touch src/assets/sccss/_config.scss`
 
 with the follwing content
@@ -179,7 +179,7 @@ a {
   line-height: 24px;
 }
 ```
-###For create routing using react we install react-router-dom
+### For create routing using react we install react-router-dom
 `npm install --save-dev react-router-dom`
 
 And import into App.js
